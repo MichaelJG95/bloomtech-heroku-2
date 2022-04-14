@@ -11,7 +11,7 @@ server.use(morgan('dev'));
 server.use(cors());
 
 server.get('/', async (req, res) => {
-    // res.json('hello world!');
+    console.log('sanity check!');
     res.json({ MESSAGE: process.env.MESSAGE });
 });
 
